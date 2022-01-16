@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative absolute</title>
+</head>
+<style>
+    body{
+        border:2px solid red;
+    }
+    .container{
+        border:5px solid orange;
+        position: relative;
+    }
+    .box{
+        width:150px;
+        height:150px;
+        margin:10;
+    }
+    #box-1{
+        background-color:seagreen;
+    }
+    #box-2{
+        background-color:chartreuse;
+        /* position: relative; */
+        position:absolute;
+        /* top:0px; */
+        /* left:50px */
+        top:0px;
+        left:60px
+        
+    }
+    #box-3{
+        background-color:orchid;
+        /* position:absolute; */
+    }
+</style>
+<body>
+    <h1>Exploring absolute and relative one more time</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quo labore. Possimus quos numquam labore? Quibusdam amet omnis culpa iure officiis qui voluptas beatae repellat.</p>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+    </div>
+    
+</body>
+</html>
